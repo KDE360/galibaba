@@ -2,6 +2,14 @@ class OrdersController < ApplicationController
   before_action :set_order, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
+  def sales
+    @orders = Order.all.where(seller: current_user).order("created_at DESC")
+  end
+
+  def purchases
+    @orders = Order.all.where(buyer: current_user).order("created_at DESC")
+  end
+
   # GET /orders
   # GET /orders.json
   def index
@@ -33,7 +41,7 @@ class OrdersController < ApplicationController
     @order.listing_id = @listing.id
     @order.buyer_id = current_user.id
     @order.seller_id = @seller.id
-    
+
     respond_to do |format|
       if @order.save
         format.html { redirect_to root_url, notice: 'Order was successfully created.' }
