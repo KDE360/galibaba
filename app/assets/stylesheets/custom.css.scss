@@ -1,2 +1,58 @@
 @import "bootstrap-sprockets";
 @import 'bootstrap';
+
+body {
+	background-color: #f9f9f9;
+	color: #333333;
+	font-family:  Helvetica, Arial, sans-serif;
+}
+
+.navbar-default {
+	background-color: #efefeb;
+}
+
+.navbar-default .navbar-brand {
+	font-family: arial, sans-serif, Helvetica, georgia, serif;
+	font-weight: 400;
+	font-style: italic;
+	color: #d5641c;
+	font-size: 30px;
+}
+
+em{
+	font-style: arial, sans-serif, Helvetica, georgia, serif;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #019285;
+}
+
+.center {
+	text-align: center;
+}
+
+.col-md-3:nth-child(4n+1){
+	clear: left;
+}
+
+.col-md-6 {
+	h3 {font-size: 45px;}
+	h5 {font-size: 25px;}
+	p  {font-size: 18px;}
+}
+
+.caption {
+	h3 {
+		font-size: 17px;
+		margin: 2px;
+	}
+	p {
+		font-size: 15px;
+		margin: 0px;
+	}
+}
