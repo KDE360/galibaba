@@ -1,6 +1,6 @@
 <div class="jumbotron">
-  <h1>Handcrafted items from around the world.</h1>
-  <h2>Discover one-of-a-kind items</h2>
+  <h3>"not handcrafted" items from around the world</h3>
+  <h4>Available (almost) daily at GA!</h4>
 </div>
 
 <div class="center">
@@ -28,5 +28,5 @@
 <br>
 
 <% if user_signed_in? %>
-  <%= link_to 'Add New Item', new_listing_path, class: "btn btn-link" %>
+  <%= link_to 'Add New Item', new_listing_path, class: "btn btn-link", data: { no_turbolink: true }  %>
 <% end %>

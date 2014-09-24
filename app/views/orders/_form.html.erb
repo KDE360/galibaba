@@ -22,6 +22,11 @@
         </div>
       <% end %>
 
+      <!-- no error message will display unless the user fills in data that’s invalid -->
+      <div id="stripe_error" class="alert alert-danger" style="display:none">
+        <noscript>JavaScript is not enabled and is required for this form. First enable it in your web browser settings.</noscript>
+      </div>
+
       <div class="form-group">
         <%= f.label :address %>
         <%= f.text_field :address, class: "form-control" %>
