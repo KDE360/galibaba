@@ -1,3 +1,4 @@
+source 'https://code.stripe.com'
 source 'https://rubygems.org'
 
 
@@ -12,7 +13,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem "paperclip", "~> 4.2"	
+gem "figaro"
 gem 'devise'
+gem 'stripe', :source => 'https://code.stripe.com/'
 
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
